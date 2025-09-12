@@ -1,0 +1,28 @@
+@media (min-width: 38rem) {
+    .menu-button {
+        display: none;
+    }
+
+    .top-bar {
+        justify-content: center;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    nav ul,
+    nav ul.open {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav li {
+        flex-grow: 1;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
