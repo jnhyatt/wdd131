@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Hyatt">
+    <meta name="description" content="Introduction to Logan, Utah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="WDD 131 - Logan, Utah - Josh Hyatt">
+    <meta property="og:description" content="Introduction to Logan, Utah">
+    <meta property="og:url" content="https://jnhyatt.github.io/wdd131/">
+    <title>WDD 131 - Logan, Utah - Josh Hyatt</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Logan, Utah</h1>
+    </header>
+
+    <main>
+        <picture>
+            <source media="(min-width: 1000px)" srcset="images/logan-wide.webp">
+            <source media="(min-width: 500px)" srcset="images/logan-normal.webp">
+            <img src="images/logan-small.webp" alt="A scenic view of Logan, Utah with mountains in the background.">
+        </picture>
+
+        <div class="table-container data-table">
+            <table>
+                <caption>Data</caption>
+                <tbody>
+                    <tr>
+                        <td>Population</td>
+                        <td>56,860</td>
+                    </tr>
+                    <tr>
+                        <td>Area</td>
+                        <td>18.43 mi²</td>
+                    </tr>
+                    <tr>
+                        <td>Elevation</td>
+                        <td>4,534 ft</td>
+                    </tr>
+                    <tr>
+                        <td>Founded</td>
+                        <td>1859</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container weather-table">
+            <table>
+                <caption>Current Weather ☀️</caption>
+                <tbody>
+                    <tr>
+                        <td>Temperature</td>
+                        <td id="temperature"></td>
+                    </tr>
+                    <tr>
+                        <td>Condition</td>
+                        <td id="condition"></td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed</td>
+                        <td id="wind-speed"></td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill</td>
+                        <td id="wind-chill"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Josh Hyatt | Utah</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
