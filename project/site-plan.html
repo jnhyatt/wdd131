@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/site-plan.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Josh Hyatt">
+    <meta name="description" content="Josh Hyatt's WDD 131 Final Project Proposal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Proposal | Josh Hyatt | WDD 131</title>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Final Project Proposal</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p>To avoid clashing with a similar site, the website will be called <strong>Rocket Tracker</strong>.</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>
+                The purpose of the site will be to teach visitors about orbital launches and space travel, as well as to
+                provide a platform for users to track upcoming launches and learn about the companies and technologies
+                involved.
+            </p>
+        </section>
+
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>What makes rocket science so difficult? Can't you just fly up?</li>
+                <li>How can I get notified about upcoming launches?</li>
+                <li>What on earth <em>is</em> everyone putting into space anyway?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Schema</h2>
+            <code>
+:root {
+    --primary-color: #141e29; /* used for header/footer background */
+    --secondary-color: #c4c5c7; /* used for body background */
+    --accent1-color: #c76a18; /* used for buttons and highlights */
+    --accent2-color: #face3c; /* used for links and hover effects */
+    --text-color: #1a1a1a; /* used for body text (except on dark backgrounds like primary color) */
+}
+            </code>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>
+                Headers will use the <strong>"Orbitron"</strong> font, which is a futuristic typeface suitable for space
+                themes.
+                Body text will use <strong>"Open Sans"</strong>, a clean and readable font.
+            </p>
+        </section>
+
+        <section>
+            <h2>Wireframes</h2>
+            <h3>Home Page</h3>
+            <img src="images/home-desktop.png" alt="Home Page (Desktop)" />
+            <h3>Home Page (Mobile)</h3>
+            <img src="images/home-mobile.png" alt="Home Page (Mobile)" />
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> 🚀 WDD 131 🚀 Josh Hyatt</p>
+        <p>Last modified <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
